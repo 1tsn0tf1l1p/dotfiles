@@ -1,31 +1,53 @@
-# Colors Ef-Bio
-[window]
-opacity = 0.65
-[colors.normal]
-black = '#222522'
-red = '#ef6560'
-green = '#3fb83f'
-yellow = '#d4aa02'
-blue = '#37aff6'
-magenta = '#d38faf'
-cyan = '#6fc5ef'
-white = '#cfdfd5'
-[colors.bright]
-black = '#505250'
-red = '#ff778f'
-green = '#00c089'
-yellow = '#cfc04f'
-blue = '#32cfef'
-magenta = '#af9fff'
-cyan = '#5dc0aa'
-white = '#808f80'
 [colors.cursor]
-cursor = '#FFFFFF'
-text = '#111111'
-[colors.primary]
-background = '#111111'
-foreground = '#cfdfd5'
-[colors.selection]
-background = '#3a3027'
-text = '#cfdfd5'
+cursor = "0xffffff"
+text = "0x000000"
 
+[colors.primary]
+background = "0x1c1c1c"
+foreground = "0xc0c0c0"
+
+[cursor]
+blink_interval = 500
+style = "Underline"
+unfocused_hollow = true
+
+[font]
+size = 11.0
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+opacity = 0.8
+
+[window.dimensions]
+columns = 80
+lines = 24
+
+[window.padding]
+x = 0
+y = 0
